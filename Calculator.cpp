@@ -11,20 +11,20 @@ int main() {
 
 	for (;;) {
 
-		std::cout << "Podaj 1 liczbe: ";
+		std::cout << "Enter first number: ";
 		std::cin >> x;
-		std::cout << "Podaj 2 liczbe: ";
+		std::cout << "Enter second number: ";
 		std::cin >> y;
 
 		std::cout << std::endl;
 
-		std::cout << " MENU GLOWNE" << std::endl;
+		std::cout << " MAIN MENU" << std::endl;
 		std::cout << "---------------" << std::endl;
-		std::cout << "1. Dodawanie" << std::endl;
-		std::cout << "2. Odejmowanie" << std::endl;
-		std::cout << "3. Mnozenie" << std::endl;
-		std::cout << "4. Dzielenie" << std::endl;
-		std::cout << "5. Zakoncz program" << std::endl;
+		std::cout << "1. Addition" << std::endl;
+		std::cout << "2. Subtraction" << std::endl;
+		std::cout << "3. Multiplication" << std::endl;
+		std::cout << "4. Division" << std::endl;
+		std::cout << "5. Shut down" << std::endl;
 
 
 		std::cout << std::endl;
@@ -32,23 +32,23 @@ int main() {
 
 		switch (choice) {
 			case '1': {
-				std::cout << "Suma = " << x + y;
+				std::cout << "Sum = " << x + y;
 				break;
 			}
 			case '2': {
-				std::cout << "Roznica = " << x - y;
+				std::cout << "Difference = " << x - y;
 				break;
 			}
 			case '3': {
-				std::cout << "Iloczyn = " << x * y;
+				std::cout << "Product = " << x * y;
 				break;
 			}
 			case '4': {
 				if (x == 0 || y == 0) {
-					std::cout << "Nie dzielimy przez zero!";
+					std::cout << "Division by zero is forbidden by all the laws of the universe!";
 				}
 				else {
-					std::cout << "Iloraz = " << x / y;
+					std::cout << "Quotient = " << x / y;
 				}
 				break;
 			}
@@ -56,7 +56,7 @@ int main() {
 				exit(0);
 			}
 			default: {
-				std::cout << "Nie ma takiej opcji w menu!";
+				std::cout << "Wrong key!";
 			}
 		}
 		getchar();
